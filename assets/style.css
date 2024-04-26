@@ -229,6 +229,6 @@ body .background-close {
         margin-bottom: 5px;
     }
     .todo-app__create input {
-        max-width: 220px;
+        max-width: 300px;
     }
 }
