@@ -16,7 +16,7 @@ body {
     padding: 30px;
     margin: 100px auto;
     border-radius: 20px;
-    background-color: #f4f4f5;
+    background-color: white;
     position: relative;
 }
 .todo-app__title {
