@@ -224,11 +224,9 @@ body .background-close {
     }
     .todo-app__item .todo-input__edit__display {
         font-size: 14px;
+        max-width: 220px;
     }
     .todo-app__item-button { 
         margin-bottom: 5px;
-    }
-    .todo-app__create input {
-        max-width: 300px;
     }
 }
