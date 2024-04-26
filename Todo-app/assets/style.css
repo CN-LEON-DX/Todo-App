@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body, input {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+body {
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.todo-app {
+    border: 1px solid #ddd;
+    width: 500px;
+    padding: 30px;
+    margin: 100px auto;
+    border-radius: 20px;
+    background-color: #f4f4f5;
+    position: relative;
+}
+.todo-app__title {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: black;
+}
+.todo-app__create {
+    margin-bottom: 30px;
+    display: flex;
+}
+.todo-app__create input {
+    flex: 1;
+    height: 42px;
+    border: 1px solid rgb(67, 77, 221);
+    padding: 0 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: 0;
+    font-size: 18px;
+}
+.todo-app__create input:focus {
+    border: 2px solid rgb(19, 33, 235);
+}
+.todo-app__create button {
+    width: 42px;
+    height: 42px;
+    background-color: rgb(67, 76, 207);
+    border: 0;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.todo-app__create button:hover {
+    background-color:rgb(56, 68, 236);
+}
+
+.todo-app__item {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8fd2f8;
+    padding: 10px;
+    border-radius: 22px;
+}
+/* When todo completed */
+.todo-app__item--completed {
+    background-color: rgb(119, 186, 189);
+}
+.todo-app__item--completed .todo-app__item-content{
+    text-decoration: line-through;
+    color: rgb(49, 48, 48);
+}
+/* If it task completed button complete will be hided */
+.todo-app__item--completed .todo-app__item-button--complete {
+    display: none;
+}
+.todo-app__item--completed .todo-app__item-button--undo {
+    display: inline-block;
+}
+/* So if we dont have class .todo-app__item--completed then that change above won't work */
+
+
+.todo-app__item-content {
+    flex: 1;
+    margin-right: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.todo-app__item-button {
+    width: 32px;
+    height: 32px;
+    border: 0;
+    cursor: pointer;
+    color: black;
+    border-radius: 10px;
+}
+.todo-app__item-button--edit {
+    background-color: cornflowerblue;
+}
+.todo-app__item-button--complete {
+    background-color: rgb(26, 190, 26);
+}
+.todo-app__item-button--delete {
+    background-color: rgb(206, 47, 153);
+}
+.todo-app__item-button--undo {
+    display: none;
+    background-color: rgb(135, 128, 243);
+}
+
+/* THÊM CSS CHO INPUT NẾU THÊM VÀO */
+.todo-input__edit {
+    display: none;
+    flex: 1;
+}
+.todo-app__item .todo-input__edit__display {
+    display: inline-block;
+    background-color: rgb(157, 191, 241);
+    color: rgb(19, 2, 36);
+    outline: 0;
+    border: 0;
+    margin-right: 10px;
+    font-size: 16px;
+    color: rgb(5, 30, 168);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.todo-app__item-button--edit i:last-child{
+    display: none;
+}
+
+
+/* // CSS CHO FORM CONFIRM */
+.todo-app__confirm--delete {
+    z-index: 9999;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: auto;
+    top: 200px;
+    right: 125px;
+    position: absolute;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-confirm .title{
+    color: #200091;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.form-confirm .content{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.form-confirm i{
+    width: 100%;
+    text-align: center;
+    color: #466fe2;
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+.form-confirm .button-confirm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-confirm .confirm-yes{
+    width: 45%;
+    background-color: #8754e6;
+    border: 0;
+    padding: 6px 0;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.button-confirm .confirm-no{
+    width: 40%;
+    background-color: #204692;
+    border: 0;
+    padding: 6px 0;
+    border-radius: 8px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: white;
+}
+
+.todo-app .todo-app__confirm--delete-display {
+    display: block;
+}
+
+/* BACKGROUND */
+body .background-close {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(26, 54, 211);
+    position: absolute;
+    opacity: 0.1;
+    z-index: 1;
+    top: 0;
+}
