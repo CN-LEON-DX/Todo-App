@@ -226,6 +226,6 @@ body .background-close {
         font-size: 14px;
     }
     .todo-app__item-button { 
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 }
