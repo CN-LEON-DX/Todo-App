@@ -225,4 +225,7 @@ body .background-close {
     .todo-app__item .todo-input__edit__display {
         font-size: 14px;
     }
+    .todo-app__item-button { 
+        margin-bottom: 10px;
+    }
 }
