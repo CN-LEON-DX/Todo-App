@@ -212,7 +212,7 @@ body .background-close {
 
 @media (max-width: 520px) {
     .todo-app {
-        width: 380px;
+        width: 400px;
         margin: 50px auto;
         padding: 10px;
     }
