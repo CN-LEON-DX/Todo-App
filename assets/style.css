@@ -4,6 +4,7 @@ body, input {
 }
 body {
     /* background-color: black; */
+    width: 100%
 }
 
 * {
@@ -212,7 +213,7 @@ body .background-close {
 
 @media (max-width: 520px) {
     .todo-app {
-        width: 400px;
+        width: 90%;
         margin: 50px auto;
         padding: 10px;
     }
