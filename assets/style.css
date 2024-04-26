@@ -228,4 +228,7 @@ body .background-close {
     .todo-app__item-button { 
         margin-bottom: 5px;
     }
+    .todo-app__create input {
+        max-width: 220px;
+    }
 }
