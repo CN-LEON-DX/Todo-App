@@ -222,4 +222,7 @@ body .background-close {
         font-size: 30px;
         text-align: center;
     }
+    .todo-app__item .todo-input__edit__display {
+        font-size: 14px;
+    }
 }
