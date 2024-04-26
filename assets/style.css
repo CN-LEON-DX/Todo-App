@@ -19,6 +19,9 @@ body {
     background-color: white;
     position: relative;
 }
+
+
+
 .todo-app__title {
     text-align: left;
     margin-top: 0;
@@ -204,4 +207,17 @@ body .background-close {
     opacity: 0.1;
     z-index: 1;
     top: 0;
+}
+
+
+@media (max-width: 520px) {
+    .todo-app {
+        width: 380px;
+        margin: 50px auto;
+        padding: 10px;
+    }
+    .todo-app__title {
+        font-size: 30px;
+        text-align: center;
+    }
 }
